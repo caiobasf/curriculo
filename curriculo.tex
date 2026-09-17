@@ -7,6 +7,8 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -16,7 +18,7 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
+\usepackage[brazilian]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
 
@@ -30,7 +32,8 @@
 
 % serif
 % \usepackage{CormorantGaramond}
-% \usepackage{charter}
+\usepackage{charter}
+% Alternativas: \usepackage{XCharter}  ou  \usepackage{libertine}
 
 
 \pagestyle{fancy}
@@ -106,14 +109,10 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
 
 \begin{center}
     \textbf{\Huge \scshape Caio Ferreira} \\ \vspace{1pt}
-    \small (11) 91621-0105 $|$ \href{mailto:caiosantana757@gmail.com}{\underline{caiosantana757@gmail.com}} $|$ 
+    \small \href{https://wa.me/5511916210105}{\underline{(11) 91621-0105}} $|$ \href{mailto:caiosantana757@gmail.com}{\underline{caiosantana757@gmail.com}} $|$ 
     \href{https://linkedin.com/in/caiobasf}{\underline{linkedin.com/in/caiobasf}} $|$
     \href{https://github.com/caiobasf}{\underline{github.com/caiobasf}}
 \end{center}
@@ -123,7 +122,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {ETEC Abdias do Nascimento}{São Paulo, SP}
-      {Ensino Médio Tecnico em Desenvolvimento de Sistemas}{Jan. 2023 -- Dez 2025}
+      {Ensino Médio Tecnico em Desenvolvimento de Sistemas}{Jan 2023 -- Dez 2025}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
@@ -131,28 +130,27 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Desenvolvedor Fullstack / Jovem Aprendiz TI}{Mai. 2026 -- Presente}
+      {Jovem Aprendiz de TI}{Mai 2026 -- Presente}
       {THE LED Oficial}{São Paulo, SP}
       \resumeItemListStart
         \resumeItem{Arquitetei e desenvolvi uma plataforma web em Next.js, TypeScript e PostgreSQL, suportando mais de 100 usuários ativos simultâneos com performance e estabilidade consistentes}
-        \resumeItem{Implementei uma camada de segurança completa autenticação, rate limiting e proteção contra SQL injection bloqueando mais de 50 tentativas de ataques básicos e avançados ao sistema}
         \resumeItem{Automatizei o processamento e envio de holerites via API do Microsoft Graph, eliminando o trabalho manual e entregando mais de 400 holerites mensais com precisão}
-        \resumeItem{Integrei a API da DocuSign para envio de documentos e contratos, otimizando o tempo de resposta para menos de 150ms e eliminando gargalos de espera no fluxo de assinaturas}
-        \resumeItem{Centralizei e cruzei dados sensíveis de sistemas ERP (TOTVS) e RD Station, melhorando a comunicação entre os setores Financeiro, Comercial, RH e TI em 50\%}
-        \resumeItem{Implementei um pipeline de CI/CD para validação automática de deploys, reduzindo em 90\% os problemas identificados em produção}
+        \resumeItem{Integrei a API da DocuSign para envio de documentos e contratos, otimizando o tempo de resposta e eliminando gargalos de espera no fluxo de assinaturas}
+        \resumeItem{Centralizei e cruzei dados sensíveis de sistemas ERP (TOTVS) e RD Station, melhorando a comunicação para os principais setores da empresa}
+        \resumeItem{Implementei um pipeline de CI/CD para validação automática antes do deploy, evitando que erros identificados em testes chegassem à produção}
+        \resumeItem{Documentei a arquitetura do sistema e os principais fluxos de integração (TOTVS, DocuSign, RD Station) seguindo boas práticas, facilitando o onboarding de novos desenvolvedores e a manutenção do código}
         \resumeItem{Desenvolvi um revisor automático de Pull Requests com o Deepseek, sinalizando erros críticos, médios e de baixo nível antes do merge}
         \resumeItem{Construí workflows de agentes e MCPs com o Claude Code, aumentando a eficiência do ciclo de desenvolvimento da equipe}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
+
+    \resumeSubheading
+      {Jovem Aprendiz de Operações}{Fev 2026 -- Mai 2026}
+      {Concentrix}{São Paulo, SP}
+      \resumeItemListStart
+        \resumeItem{Estruturei e automatizei planilhas utilizando fórmulas avançadas, validação de dados e recursos de visualização, otimizando a organização, apresentação e análise de informações para apoiar a tomada de decisões}
+        \resumeItem{Desenvolvi apresentações executivas em PowerPoint com foco em clareza visual, organização e hierarquia das informações, seguindo as diretrizes de comunicação corporativa da empresa}
+        \resumeItem{Desenvolvi projetos internos voltados à melhoria da comunicação e colaboração entre equipes, contribuindo para maior eficiência dos processos organizacionais}
+      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -164,14 +162,12 @@
           \resumeItemListStart
             \resumeItem{Desenvolvi, em equipe, uma plataforma web full stack em TypeScript, Next.js, Node.JS e PostgreSQL, voltada ao ensino básico de LIBRAS (Língua Brasileira de Sinais), como projeto de TCC}
             \resumeItem{Modelei o banco de dados em PostgreSQL com queries SQL puras, estruturando o armazenamento de conteúdo didático e progresso dos usuários na plataforma}
-            \resumeItem{Integrei o MediaPipe para construir pipelines de reconhecimento de gestos em LIBRAS via câmera em tempo real, melhorando a precisão do reconhecimento de sinais em até 70\%}
-            \resumeItem{Integrei o Clerk para autenticação e autorização da plataforma, reforçando a segurança contra acessos não autorizados}
+            \resumeItem{Integrei o MediaPipe para construir pipelines de reconhecimento de gestos em LIBRAS via câmera em tempo real, melhorando a precisão do reconhecimento de sinais em até 75\% dos casos}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Oracle Discovery Data} $|$ \emph{Python, OAC, MySQL}}{Set 2024 -- Set 2024}
           \resumeItemListStart
-            \resumeItem{Utilizei o OAC (Oracle Analytics Cloud) para analisar, filtrar e processar mais de 1.000 dados reais, desenvolvendo um protótipo de aplicativo com realidade aumentada para auxílio em exercícios físicos}
-            \resumeItem{Integrei Python ao OAC para desenvolver dashboards interativos, permitindo o tratamento e a visualização eficiente dos dados utilizados no projeto}
+            \resumeItem{Integrei Python ao OAC (Oracle Analytics Cloud) para desenvolver dashboards interativos com mais de 1.000 dados reais, dando suporte a um protótipo de aplicativo de realidade aumentada voltado ao auxílio em exercícios físicos}
             \resumeItem{Desenvolvi e apresentei um pitch do protótipo no palco da Oracle, para representantes da empresa, comunicando a solução técnica de forma clara e objetiva}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
@@ -181,8 +177,9 @@
 \section{Stack e Habilidades}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Linguagens}{:Python, TypeScript, C/C++, SQL (Postgres, MySQL), JavaScript, HTML/CSS} \\
+     \textbf{Linguagens}{: Python, TypeScript, C/C++, SQL (Postgres, MySQL), JavaScript, HTML/CSS} \\
      \textbf{Frameworks}{: React, Node.js, Express, Next.Js, Mediapipe} \\
+     \textbf{Testes}{: Playwright, React Testing Library} \\
      \textbf{Ferramentas}{: Git, Github, Github Actions, Docker, VS Code, Visual Studio, PyCharm} \\
      \textbf{IAs}{: Claude Code, DeepSeek, Codex, Kimi, OpenCode} \\
      \textbf{Idiomas}{: Inglês (Avançado) / Português (Nativo)}
