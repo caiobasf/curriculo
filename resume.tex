@@ -1,0 +1,191 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Caio Ferreira
+% Based on: https://github.com/sb2nov/resume and Jake Ryan
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+% Alternatives: \usepackage{XCharter}  or  \usepackage{libertine}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%  Resume Starts Here  %
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Caio Ferreira} \\ \vspace{1pt}
+    \small \href{https://wa.me/5511916210105}{\underline{+55 (11) 91621-0105}} $|$ \href{mailto:caiosantana757@gmail.com}{\underline{caiosantana757@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/caiobasf}{\underline{linkedin.com/in/caiobasf}} $|$
+    \href{https://github.com/caiobasf}{\underline{github.com/caiobasf}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ETEC Abdias do Nascimento}{São Paulo, Brazil}
+      {Technical High School Diploma in Systems Development}{Jan 2023 -- Dec 2025}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineering Intern}{May 2026 -- Present}
+      {THE LED Oficial}{São Paulo, Brazil}
+      \resumeItemListStart
+        \resumeItem{Architected and built a full-stack web platform using Next.js, TypeScript, and PostgreSQL, supporting 100+ concurrent active users with consistent performance and stability}
+        \resumeItem{Automated payroll processing and distribution via the Microsoft Graph API, eliminating manual work and delivering 400+ pay stubs monthly with full accuracy}
+        \resumeItem{Integrated the DocuSign API for contract and document delivery, streamlining response times and removing bottlenecks in the signature workflow}
+        \resumeItem{Wrote automated tests with React Testing Library and Playwright covering core platform flows, increasing system reliability ahead of each deployment}
+        \resumeItem{Centralized and cross-referenced sensitive data across ERP (TOTVS) and RD Station systems, improving communication across key departments (Finance, Sales, HR, and IT)}
+        \resumeItem{Built a CI/CD pipeline for automated pre-deployment validation, preventing test-flagged errors from reaching production}
+        \resumeItem{Documented system architecture and key integration flows (TOTVS, DocuSign, RD Station) following best practices, streamlining onboarding for new developers and long-term maintainability}
+        \resumeItem{Built an automated pull request reviewer using DeepSeek, flagging critical, moderate, and minor issues before merge}
+        \resumeItem{Built agent and MCP workflows with Claude Code, improving the team's development cycle efficiency}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Operations Intern}{Feb 2026 -- May 2026}
+      {Concentrix}{São Paulo, Brazil}
+      \resumeItemListStart
+        \resumeItem{Structured and automated spreadsheets using advanced formulas, data validation, and visualization tools, improving the organization, presentation, and analysis of information to support decision-making}
+        \resumeItem{Developed executive PowerPoint presentations focused on visual clarity, structure, and information hierarchy, following the company's corporate communication guidelines}
+        \resumeItem{Developed internal initiatives aimed at improving cross-team communication and collaboration, contributing to greater organizational process efficiency}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Libralizei} $|$ \emph{TypeScript, Node.js, React, PostgreSQL}}{Jan 2025 -- Dec 2025}
+          \resumeItemListStart
+            \resumeItem{Collaborated on a full-stack web platform, built with TypeScript, Next.js, Node.js, and PostgreSQL, for teaching foundational Brazilian Sign Language (LIBRAS), developed as a capstone project}
+            \resumeItem{Modeled the PostgreSQL database using raw SQL queries, structuring storage for course content and user progress}
+            \resumeItem{Integrated MediaPipe to build real-time camera-based sign recognition pipelines for LIBRAS, improving recognition accuracy by up to 75\%}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Oracle Discovery Data} $|$ \emph{Python, OAC, MySQL}}{Sep 2024}
+          \resumeItemListStart
+            \resumeItem{Used Python with OAC (Oracle Analytics Cloud) to build interactive dashboards processing 1,000+ real data points, supporting an augmented reality app prototype for physical exercise assistance}
+            \resumeItem{Presented the prototype pitch on stage at Oracle to company representatives, communicating the technical solution clearly and effectively}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, TypeScript, C/C++, SQL (PostgreSQL, MySQL), JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: React, Node.js, Express, Next.js, MediaPipe} \\
+     \textbf{Testing}{: Playwright, React Testing Library} \\
+     \textbf{Tools}{: Git, GitHub, GitHub Actions, Docker, VS Code, Visual Studio, PyCharm} \\
+     \textbf{AI Tools}{: Claude Code, DeepSeek, Codex, Kimi, OpenCode} \\
+     \textbf{Languages Spoken}{: English (Advanced) / Portuguese (Native)}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
