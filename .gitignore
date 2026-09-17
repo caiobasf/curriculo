@@ -1,0 +1,9 @@
+
+# Arquivos de compilação do LaTex
+
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
