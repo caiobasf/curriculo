@@ -1,2 +1,2 @@
-# curr-culo
+# curriculo
 Meus curriculos feito em LaTex
